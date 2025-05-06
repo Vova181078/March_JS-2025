@@ -16,36 +16,30 @@ let users = [
 
 
 
-    for (let userKey in users) {
-        if (users[userKey].status === true) {
-            document.write(`<div>
-                           ${users[userKey]['status']}
-                        </div>`)
-
-        } else if (users[userKey].status === false) {
-            document.write(`<div>
-                          ${users[userKey]['status']}
-                       </div>`)
-
-
-        }
-    }
-
-
-        for (let userKey in users) {
-            if (users[userKey].age > 30) {
-                document.write(`<div>
-                           ${users[userKey]['age']}
-                        </div>`)
-            }
-        }
-    
-
-    
 // за допомоги циклу вивести:
-//     - користувачів зі статусом true
-// - користувачів зі статусом false
-// - користувачів які старші за 30 років
+
+//   1.  - користувачів зі статусом true
+
+// for (let user of users) {
+//     if(user.status)
+//         console.log(user);
+// }
+
+
+// 2. - користувачів зі статусом false
+
+// for (let user of users) {
+//     if(user.status !== true)
+//         console.log(user);
+// }
+
+// 3. - користувачів які старші за 30 років
+// for (let user of users) {
+//     if (user.age > 30) {
+//         console.log(user);
+//     }
+
+
 
 
 
