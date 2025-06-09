@@ -15,32 +15,33 @@ const next = document.getElementById('next');
 const arr = [];
 for (let i = 0; i < 100; i++) {
        arr.push({id: 1, name: 'kolya' + (i + 1)});
+    console.log(arr)
 
 
 
     let counter = 0;
     let limit = 10;
-       press.addEventListener('click', function () {
+       next.addEventListener('click', function () {
 
-           next.innerText = '';
+           press.innerText = '';
 
            for (let j = counter; limit < 10; j++) {
                const p = document.createElement('p');
                p.innerText = arr[j].name;
-               next.appendChild(p);
+               arr.appendChild(p);
 
 
                }
 
 
        })
-             press.addEventListener('click', function ()  {
+             prev.addEventListener('click', function ()  {
 
-               prev.innerText = '';
+               press.innerText = '';
                for (let k = counter; limit > 10; k--) {
                    const p2 = document.createElement('p');
                    p2.innerText = arr[k].name;
-                   prev.appendChild(p2);
+                   arr.appendChild(p2);
 
                }
 
